@@ -1,0 +1,173 @@
+>INFO  p.z.integration.CarDealershipTest - ### RUNNING ORDER 1
+PINFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.4.Final
+¢INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+FINFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+tINFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d96d872
+KINFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+VINFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+ŸINFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+(Hibernate: delete from service_mechanic
+$Hibernate: delete from service_part
++Hibernate: delete from car_service_request
+Hibernate: delete from invoice
+ Hibernate: delete from mechanic
+Hibernate: delete from part
+Hibernate: delete from service
+"Hibernate: delete from car_to_buy
+&Hibernate: delete from car_to_service
+ Hibernate: delete from customer
+Hibernate: delete from address
+ Hibernate: delete from salesman
+>INFO  p.z.integration.CarDealershipTest - ### RUNNING ORDER 2
+HHibernate: insert into salesman (name, pesel, surname) values (?, ?, ?)
+HHibernate: insert into salesman (name, pesel, surname) values (?, ?, ?)
+HHibernate: insert into salesman (name, pesel, surname) values (?, ?, ?)
+HHibernate: insert into salesman (name, pesel, surname) values (?, ?, ?)
+HHibernate: insert into mechanic (name, pesel, surname) values (?, ?, ?)
+HHibernate: insert into mechanic (name, pesel, surname) values (?, ?, ?)
+HHibernate: insert into mechanic (name, pesel, surname) values (?, ?, ?)
+dHibernate: insert into car_to_buy (brand, color, model, price, vin, year) values (?, ?, ?, ?, ?, ?)
+dHibernate: insert into car_to_buy (brand, color, model, price, vin, year) values (?, ?, ?, ?, ?, ?)
+dHibernate: insert into car_to_buy (brand, color, model, price, vin, year) values (?, ?, ?, ?, ?, ?)
+dHibernate: insert into car_to_buy (brand, color, model, price, vin, year) values (?, ?, ?, ?, ?, ?)
+dHibernate: insert into car_to_buy (brand, color, model, price, vin, year) values (?, ?, ?, ?, ?, ?)
+dHibernate: insert into car_to_buy (brand, color, model, price, vin, year) values (?, ?, ?, ?, ?, ?)
+SHibernate: insert into service (description, price, service_code) values (?, ?, ?)
+SHibernate: insert into service (description, price, service_code) values (?, ?, ?)
+SHibernate: insert into service (description, price, service_code) values (?, ?, ?)
+SHibernate: insert into service (description, price, service_code) values (?, ?, ?)
+SHibernate: insert into service (description, price, service_code) values (?, ?, ?)
+QHibernate: insert into part (description, price, serial_number) values (?, ?, ?)
+QHibernate: insert into part (description, price, serial_number) values (?, ?, ?)
+QHibernate: insert into part (description, price, serial_number) values (?, ?, ?)
+QHibernate: insert into part (description, price, serial_number) values (?, ?, ?)
+>INFO  p.z.integration.CarDealershipTest - ### RUNNING ORDER 3
+ŠHibernate: select c1_0.car_to_buy_id,c1_0.brand,c1_0.color,c1_0.model,c1_0.price,c1_0.vin,c1_0.year from car_to_buy c1_0 where c1_0.vin=?
+§Hibernate: select i1_0.invoice_id,i1_0.car_to_buy_id,i1_0.customer_id,i1_0.date_time,i1_0.invoice_number,i1_0.salesman_id from invoice i1_0 where i1_0.car_to_buy_id=?
+kHibernate: select s1_0.salesman_id,s1_0.name,s1_0.pesel,s1_0.surname from salesman s1_0 where s1_0.pesel=?
+ŠHibernate: select c1_0.car_to_buy_id,c1_0.brand,c1_0.color,c1_0.model,c1_0.price,c1_0.vin,c1_0.year from car_to_buy c1_0 where c1_0.vin=?
+§Hibernate: select i1_0.invoice_id,i1_0.car_to_buy_id,i1_0.customer_id,i1_0.date_time,i1_0.invoice_number,i1_0.salesman_id from invoice i1_0 where i1_0.car_to_buy_id=?
+kHibernate: select s1_0.salesman_id,s1_0.name,s1_0.pesel,s1_0.surname from salesman s1_0 where s1_0.pesel=?
+ŠHibernate: select c1_0.car_to_buy_id,c1_0.brand,c1_0.color,c1_0.model,c1_0.price,c1_0.vin,c1_0.year from car_to_buy c1_0 where c1_0.vin=?
+§Hibernate: select i1_0.invoice_id,i1_0.car_to_buy_id,i1_0.customer_id,i1_0.date_time,i1_0.invoice_number,i1_0.salesman_id from invoice i1_0 where i1_0.car_to_buy_id=?
+kHibernate: select s1_0.salesman_id,s1_0.name,s1_0.pesel,s1_0.surname from salesman s1_0 where s1_0.pesel=?
+ŠHibernate: select c1_0.car_to_buy_id,c1_0.brand,c1_0.color,c1_0.model,c1_0.price,c1_0.vin,c1_0.year from car_to_buy c1_0 where c1_0.vin=?
+§Hibernate: select i1_0.invoice_id,i1_0.car_to_buy_id,i1_0.customer_id,i1_0.date_time,i1_0.invoice_number,i1_0.salesman_id from invoice i1_0 where i1_0.car_to_buy_id=?
+kHibernate: select s1_0.salesman_id,s1_0.name,s1_0.pesel,s1_0.surname from salesman s1_0 where s1_0.pesel=?
+ŠHibernate: select c1_0.car_to_buy_id,c1_0.brand,c1_0.color,c1_0.model,c1_0.price,c1_0.vin,c1_0.year from car_to_buy c1_0 where c1_0.vin=?
+§Hibernate: select i1_0.invoice_id,i1_0.car_to_buy_id,i1_0.customer_id,i1_0.date_time,i1_0.invoice_number,i1_0.salesman_id from invoice i1_0 where i1_0.car_to_buy_id=?
+kHibernate: select s1_0.salesman_id,s1_0.name,s1_0.pesel,s1_0.surname from salesman s1_0 where s1_0.pesel=?
+YHibernate: insert into address (address, city, country, postal_code) values (?, ?, ?, ?)
+aHibernate: insert into customer (address_id, email, name, phone, surname) values (?, ?, ?, ?, ?)
+{Hibernate: insert into invoice (car_to_buy_id, customer_id, date_time, invoice_number, salesman_id) values (?, ?, ?, ?, ?)
+YHibernate: insert into address (address, city, country, postal_code) values (?, ?, ?, ?)
+aHibernate: insert into customer (address_id, email, name, phone, surname) values (?, ?, ?, ?, ?)
+{Hibernate: insert into invoice (car_to_buy_id, customer_id, date_time, invoice_number, salesman_id) values (?, ?, ?, ?, ?)
+YHibernate: insert into address (address, city, country, postal_code) values (?, ?, ?, ?)
+aHibernate: insert into customer (address_id, email, name, phone, surname) values (?, ?, ?, ?, ?)
+{Hibernate: insert into invoice (car_to_buy_id, customer_id, date_time, invoice_number, salesman_id) values (?, ?, ?, ?, ?)
+YHibernate: insert into address (address, city, country, postal_code) values (?, ?, ?, ?)
+aHibernate: insert into customer (address_id, email, name, phone, surname) values (?, ?, ?, ?, ?)
+{Hibernate: insert into invoice (car_to_buy_id, customer_id, date_time, invoice_number, salesman_id) values (?, ?, ?, ?, ?)
+YHibernate: insert into address (address, city, country, postal_code) values (?, ?, ?, ?)
+aHibernate: insert into customer (address_id, email, name, phone, surname) values (?, ?, ?, ?, ?)
+{Hibernate: insert into invoice (car_to_buy_id, customer_id, date_time, invoice_number, salesman_id) values (?, ?, ?, ?, ?)
+†Hibernate: select c1_0.customer_id,c1_0.address_id,c1_0.email,c1_0.name,c1_0.phone,c1_0.surname from customer c1_0 where c1_0.email=?
+Hibernate: select a1_0.address_id,a1_0.address,a1_0.city,a1_0.country,a1_0.postal_code from address a1_0 where a1_0.address_id=?
+‘Hibernate: select c1_0.customer_id,a1_0.address_id,a1_0.address,a1_0.city,a1_0.country,a1_0.postal_code,c2_0.customer_id,c2_0.car_service_request_id,c2_0.car_to_service_id,c2_0.car_service_request_number,c2_0.completed_date_time,c2_0.customer_comment,c2_0.received_date_time,c1_0.email,i1_0.customer_id,i1_0.invoice_id,i1_0.car_to_buy_id,i1_0.date_time,i1_0.invoice_number,i1_0.salesman_id,c1_0.name,c1_0.phone,c1_0.surname from customer c1_0 left join address a1_0 on a1_0.address_id=c1_0.address_id left join car_service_request c2_0 on c1_0.customer_id=c2_0.customer_id left join invoice i1_0 on c1_0.customer_id=i1_0.customer_id where c1_0.address_id=?
+ŠHibernate: select c1_0.car_to_buy_id,c1_0.brand,c1_0.color,c1_0.model,c1_0.price,c1_0.vin,c1_0.year from car_to_buy c1_0 where c1_0.vin=?
+§Hibernate: select i1_0.invoice_id,i1_0.car_to_buy_id,i1_0.customer_id,i1_0.date_time,i1_0.invoice_number,i1_0.salesman_id from invoice i1_0 where i1_0.car_to_buy_id=?
+kHibernate: select s1_0.salesman_id,s1_0.name,s1_0.pesel,s1_0.surname from salesman s1_0 where s1_0.pesel=?
+{Hibernate: insert into invoice (car_to_buy_id, customer_id, date_time, invoice_number, salesman_id) values (?, ?, ?, ?, ?)
+>INFO  p.z.integration.CarDealershipTest - ### RUNNING ORDER 4
+|Hibernate: select c1_0.car_to_service_id,c1_0.brand,c1_0.model,c1_0.vin,c1_0.year from car_to_service c1_0 where c1_0.vin=?
+ŠHibernate: select c1_0.car_to_buy_id,c1_0.brand,c1_0.color,c1_0.model,c1_0.price,c1_0.vin,c1_0.year from car_to_buy c1_0 where c1_0.vin=?
+§Hibernate: select i1_0.invoice_id,i1_0.car_to_buy_id,i1_0.customer_id,i1_0.date_time,i1_0.invoice_number,i1_0.salesman_id from invoice i1_0 where i1_0.car_to_buy_id=?
+THibernate: insert into car_to_service (brand, model, vin, year) values (?, ?, ?, ?)
+†Hibernate: select c1_0.customer_id,c1_0.address_id,c1_0.email,c1_0.name,c1_0.phone,c1_0.surname from customer c1_0 where c1_0.email=?
+Hibernate: select a1_0.address_id,a1_0.address,a1_0.city,a1_0.country,a1_0.postal_code from address a1_0 where a1_0.address_id=?
+‘Hibernate: select c1_0.customer_id,a1_0.address_id,a1_0.address,a1_0.city,a1_0.country,a1_0.postal_code,c2_0.customer_id,c2_0.car_service_request_id,c2_0.car_to_service_id,c2_0.car_service_request_number,c2_0.completed_date_time,c2_0.customer_comment,c2_0.received_date_time,c1_0.email,i1_0.customer_id,i1_0.invoice_id,i1_0.car_to_buy_id,i1_0.date_time,i1_0.invoice_number,i1_0.salesman_id,c1_0.name,c1_0.phone,c1_0.surname from customer c1_0 left join address a1_0 on a1_0.address_id=c1_0.address_id left join car_service_request c2_0 on c1_0.customer_id=c2_0.customer_id left join invoice i1_0 on c1_0.customer_id=i1_0.customer_id where c1_0.address_id=?
+½Hibernate: insert into car_service_request (car_to_service_id, car_service_request_number, completed_date_time, customer_id, customer_comment, received_date_time) values (?, ?, ?, ?, ?, ?)
+|Hibernate: select c1_0.car_to_service_id,c1_0.brand,c1_0.model,c1_0.vin,c1_0.year from car_to_service c1_0 where c1_0.vin=?
+ŠHibernate: select c1_0.car_to_buy_id,c1_0.brand,c1_0.color,c1_0.model,c1_0.price,c1_0.vin,c1_0.year from car_to_buy c1_0 where c1_0.vin=?
+§Hibernate: select i1_0.invoice_id,i1_0.car_to_buy_id,i1_0.customer_id,i1_0.date_time,i1_0.invoice_number,i1_0.salesman_id from invoice i1_0 where i1_0.car_to_buy_id=?
+THibernate: insert into car_to_service (brand, model, vin, year) values (?, ?, ?, ?)
+†Hibernate: select c1_0.customer_id,c1_0.address_id,c1_0.email,c1_0.name,c1_0.phone,c1_0.surname from customer c1_0 where c1_0.email=?
+Hibernate: select a1_0.address_id,a1_0.address,a1_0.city,a1_0.country,a1_0.postal_code from address a1_0 where a1_0.address_id=?
+‘Hibernate: select c1_0.customer_id,a1_0.address_id,a1_0.address,a1_0.city,a1_0.country,a1_0.postal_code,c2_0.customer_id,c2_0.car_service_request_id,c2_0.car_to_service_id,c2_0.car_service_request_number,c2_0.completed_date_time,c2_0.customer_comment,c2_0.received_date_time,c1_0.email,i1_0.customer_id,i1_0.invoice_id,i1_0.car_to_buy_id,i1_0.date_time,i1_0.invoice_number,i1_0.salesman_id,c1_0.name,c1_0.phone,c1_0.surname from customer c1_0 left join address a1_0 on a1_0.address_id=c1_0.address_id left join car_service_request c2_0 on c1_0.customer_id=c2_0.customer_id left join invoice i1_0 on c1_0.customer_id=i1_0.customer_id where c1_0.address_id=?
+½Hibernate: insert into car_service_request (car_to_service_id, car_service_request_number, completed_date_time, customer_id, customer_comment, received_date_time) values (?, ?, ?, ?, ?, ?)
+THibernate: insert into car_to_service (brand, model, vin, year) values (?, ?, ?, ?)
+YHibernate: insert into address (address, city, country, postal_code) values (?, ?, ?, ?)
+aHibernate: insert into customer (address_id, email, name, phone, surname) values (?, ?, ?, ?, ?)
+½Hibernate: insert into car_service_request (car_to_service_id, car_service_request_number, completed_date_time, customer_id, customer_comment, received_date_time) values (?, ?, ?, ?, ?, ?)
+>INFO  p.z.integration.CarDealershipTest - ### RUNNING ORDER 5
+kHibernate: select m1_0.mechanic_id,m1_0.name,m1_0.pesel,m1_0.surname from mechanic m1_0 where m1_0.pesel=?
+|Hibernate: select c1_0.car_to_service_id,c1_0.brand,c1_0.model,c1_0.vin,c1_0.year from car_to_service c1_0 where c1_0.vin=?
+ÛHibernate: select c1_0.car_service_request_id,c1_0.car_to_service_id,c1_0.car_service_request_number,c1_0.completed_date_time,c1_0.customer_id,c1_0.customer_comment,c1_0.received_date_time from car_service_request c1_0 join car_to_service c2_0 on c2_0.car_to_service_id=c1_0.car_to_service_id where c2_0.vin=? and c1_0.completed_date_time is null
+|Hibernate: select s1_0.service_id,s1_0.description,s1_0.price,s1_0.service_code from service s1_0 where s1_0.service_code=?
+xHibernate: select p1_0.part_id,p1_0.description,p1_0.price,p1_0.serial_number from part p1_0 where p1_0.serial_number=?
+Hibernate: insert into service_mechanic (car_service_request_id, comment, hours, mechanic_id, service_id) values (?, ?, ?, ?, ?)
+aHibernate: insert into service_part (car_service_request_id, part_id, quantity) values (?, ?, ?)
+kHibernate: select m1_0.mechanic_id,m1_0.name,m1_0.pesel,m1_0.surname from mechanic m1_0 where m1_0.pesel=?
+|Hibernate: select c1_0.car_to_service_id,c1_0.brand,c1_0.model,c1_0.vin,c1_0.year from car_to_service c1_0 where c1_0.vin=?
+ÛHibernate: select c1_0.car_service_request_id,c1_0.car_to_service_id,c1_0.car_service_request_number,c1_0.completed_date_time,c1_0.customer_id,c1_0.customer_comment,c1_0.received_date_time from car_service_request c1_0 join car_to_service c2_0 on c2_0.car_to_service_id=c1_0.car_to_service_id where c2_0.vin=? and c1_0.completed_date_time is null
+|Hibernate: select s1_0.service_id,s1_0.description,s1_0.price,s1_0.service_code from service s1_0 where s1_0.service_code=?
+Hibernate: insert into service_mechanic (car_service_request_id, comment, hours, mechanic_id, service_id) values (?, ?, ?, ?, ?)
+ÿHibernate: select c1_0.car_service_request_id,c1_0.car_to_service_id,c1_0.car_service_request_number,c1_0.completed_date_time,c1_0.customer_id,c1_0.customer_comment,c1_0.received_date_time from car_service_request c1_0 where c1_0.car_service_request_id=?
+ËHibernate: update car_service_request set car_to_service_id=?, car_service_request_number=?, completed_date_time=?, customer_id=?, customer_comment=?, received_date_time=? where car_service_request_id=?
+kHibernate: select m1_0.mechanic_id,m1_0.name,m1_0.pesel,m1_0.surname from mechanic m1_0 where m1_0.pesel=?
+|Hibernate: select c1_0.car_to_service_id,c1_0.brand,c1_0.model,c1_0.vin,c1_0.year from car_to_service c1_0 where c1_0.vin=?
+ÛHibernate: select c1_0.car_service_request_id,c1_0.car_to_service_id,c1_0.car_service_request_number,c1_0.completed_date_time,c1_0.customer_id,c1_0.customer_comment,c1_0.received_date_time from car_service_request c1_0 join car_to_service c2_0 on c2_0.car_to_service_id=c1_0.car_to_service_id where c2_0.vin=? and c1_0.completed_date_time is null
+|Hibernate: select s1_0.service_id,s1_0.description,s1_0.price,s1_0.service_code from service s1_0 where s1_0.service_code=?
+xHibernate: select p1_0.part_id,p1_0.description,p1_0.price,p1_0.serial_number from part p1_0 where p1_0.serial_number=?
+Hibernate: insert into service_mechanic (car_service_request_id, comment, hours, mechanic_id, service_id) values (?, ?, ?, ?, ?)
+aHibernate: insert into service_part (car_service_request_id, part_id, quantity) values (?, ?, ?)
+kHibernate: select m1_0.mechanic_id,m1_0.name,m1_0.pesel,m1_0.surname from mechanic m1_0 where m1_0.pesel=?
+|Hibernate: select c1_0.car_to_service_id,c1_0.brand,c1_0.model,c1_0.vin,c1_0.year from car_to_service c1_0 where c1_0.vin=?
+ÛHibernate: select c1_0.car_service_request_id,c1_0.car_to_service_id,c1_0.car_service_request_number,c1_0.completed_date_time,c1_0.customer_id,c1_0.customer_comment,c1_0.received_date_time from car_service_request c1_0 join car_to_service c2_0 on c2_0.car_to_service_id=c1_0.car_to_service_id where c2_0.vin=? and c1_0.completed_date_time is null
+|Hibernate: select s1_0.service_id,s1_0.description,s1_0.price,s1_0.service_code from service s1_0 where s1_0.service_code=?
+xHibernate: select p1_0.part_id,p1_0.description,p1_0.price,p1_0.serial_number from part p1_0 where p1_0.serial_number=?
+Hibernate: insert into service_mechanic (car_service_request_id, comment, hours, mechanic_id, service_id) values (?, ?, ?, ?, ?)
+aHibernate: insert into service_part (car_service_request_id, part_id, quantity) values (?, ?, ?)
+kHibernate: select m1_0.mechanic_id,m1_0.name,m1_0.pesel,m1_0.surname from mechanic m1_0 where m1_0.pesel=?
+|Hibernate: select c1_0.car_to_service_id,c1_0.brand,c1_0.model,c1_0.vin,c1_0.year from car_to_service c1_0 where c1_0.vin=?
+ÛHibernate: select c1_0.car_service_request_id,c1_0.car_to_service_id,c1_0.car_service_request_number,c1_0.completed_date_time,c1_0.customer_id,c1_0.customer_comment,c1_0.received_date_time from car_service_request c1_0 join car_to_service c2_0 on c2_0.car_to_service_id=c1_0.car_to_service_id where c2_0.vin=? and c1_0.completed_date_time is null
+|Hibernate: select s1_0.service_id,s1_0.description,s1_0.price,s1_0.service_code from service s1_0 where s1_0.service_code=?
+xHibernate: select p1_0.part_id,p1_0.description,p1_0.price,p1_0.serial_number from part p1_0 where p1_0.serial_number=?
+Hibernate: insert into service_mechanic (car_service_request_id, comment, hours, mechanic_id, service_id) values (?, ?, ?, ?, ?)
+aHibernate: insert into service_part (car_service_request_id, part_id, quantity) values (?, ?, ?)
+ÿHibernate: select c1_0.car_service_request_id,c1_0.car_to_service_id,c1_0.car_service_request_number,c1_0.completed_date_time,c1_0.customer_id,c1_0.customer_comment,c1_0.received_date_time from car_service_request c1_0 where c1_0.car_service_request_id=?
+ËHibernate: update car_service_request set car_to_service_id=?, car_service_request_number=?, completed_date_time=?, customer_id=?, customer_comment=?, received_date_time=? where car_service_request_id=?
+>INFO  p.z.integration.CarDealershipTest - ### RUNNING ORDER 6
+|Hibernate: select c1_0.car_to_service_id,c1_0.brand,c1_0.model,c1_0.vin,c1_0.year from car_to_service c1_0 where c1_0.vin=?
+úHibernate: select c1_0.car_to_service_id,c1_0.car_service_request_id,c1_0.car_service_request_number,c1_0.completed_date_time,c1_0.customer_id,c1_0.customer_comment,c1_0.received_date_time from car_service_request c1_0 where c1_0.car_to_service_id=?
+¿Hibernate: select s1_0.car_service_request_id,s1_0.service_mechanic_id,s1_0.comment,s1_0.hours,s1_0.mechanic_id,s1_0.service_id from service_mechanic s1_0 where s1_0.car_service_request_id=?
+zHibernate: select s1_0.service_id,s1_0.description,s1_0.price,s1_0.service_code from service s1_0 where s1_0.service_id=?
+zHibernate: select s1_0.service_id,s1_0.description,s1_0.price,s1_0.service_code from service s1_0 where s1_0.service_id=?
+™Hibernate: select s1_0.car_service_request_id,s1_0.service_part_id,s1_0.part_id,s1_0.quantity from service_part s1_0 where s1_0.car_service_request_id=?
+rHibernate: select p1_0.part_id,p1_0.description,p1_0.price,p1_0.serial_number from part p1_0 where p1_0.part_id=?
+SINFO  pl.zajavka.business.CarService - ###CAR HISTORY FOR VIN: [2C3CDYAG2DH731952]
+öINFO  pl.zajavka.business.CarService - ###SERVICE REQUEST: [ServiceRequest{serviceRequestNumber='2027.0.10-10.2.10.97', receivedDateTime=2027-01-10T11:02:10+01:00, completedDateTime=2029-03-02T11:09:12+01:00, customerComment='KoÅ‚o mi odpadÅ‚o}]
+}INFO  pl.zajavka.business.CarService - ###SERVICE: [Service[serviceCode=58394-014, description=Wymiana koÅ‚a, price=240.20]]
+~INFO  pl.zajavka.business.CarService - ###SERVICE: [Service[serviceCode=55319-866, description=Strojenie koÅ‚a, price=50.20]]
+qINFO  pl.zajavka.business.CarService - ###PART: [Part[serialNumber=11523-7310, description=KoÅ‚o, price=320.11]]
+|Hibernate: select c1_0.car_to_service_id,c1_0.brand,c1_0.model,c1_0.vin,c1_0.year from car_to_service c1_0 where c1_0.vin=?
+úHibernate: select c1_0.car_to_service_id,c1_0.car_service_request_id,c1_0.car_service_request_number,c1_0.completed_date_time,c1_0.customer_id,c1_0.customer_comment,c1_0.received_date_time from car_service_request c1_0 where c1_0.car_to_service_id=?
+¿Hibernate: select s1_0.car_service_request_id,s1_0.service_mechanic_id,s1_0.comment,s1_0.hours,s1_0.mechanic_id,s1_0.service_id from service_mechanic s1_0 where s1_0.car_service_request_id=?
+zHibernate: select s1_0.service_id,s1_0.description,s1_0.price,s1_0.service_code from service s1_0 where s1_0.service_id=?
+zHibernate: select s1_0.service_id,s1_0.description,s1_0.price,s1_0.service_code from service s1_0 where s1_0.service_id=?
+zHibernate: select s1_0.service_id,s1_0.description,s1_0.price,s1_0.service_code from service s1_0 where s1_0.service_id=?
+™Hibernate: select s1_0.car_service_request_id,s1_0.service_part_id,s1_0.part_id,s1_0.quantity from service_part s1_0 where s1_0.car_service_request_id=?
+rHibernate: select p1_0.part_id,p1_0.description,p1_0.price,p1_0.serial_number from part p1_0 where p1_0.part_id=?
+rHibernate: select p1_0.part_id,p1_0.description,p1_0.price,p1_0.serial_number from part p1_0 where p1_0.part_id=?
+rHibernate: select p1_0.part_id,p1_0.description,p1_0.price,p1_0.serial_number from part p1_0 where p1_0.part_id=?
+SINFO  pl.zajavka.business.CarService - ###CAR HISTORY FOR VIN: [1GCEC19X27Z109567]
+ýINFO  pl.zajavka.business.CarService - ###SERVICE REQUEST: [ServiceRequest{serviceRequestNumber='2027.0.10-10.2.10.74', receivedDateTime=2027-01-10T11:02:10+01:00, completedDateTime=2029-03-02T11:09:12+01:00, customerComment='Olej mi cieknie na stopy}]
+…INFO  pl.zajavka.business.CarService - ###SERVICE: [Service[serviceCode=14222-2022, description=Wymiana filtra paliwa, price=14.98]]
+}INFO  pl.zajavka.business.CarService - ###SERVICE: [Service[serviceCode=0008-0407, description=Wymiana oleju, price=140.15]]
+…INFO  pl.zajavka.business.CarService - ###SERVICE: [Service[serviceCode=43063-180, description=Wymiana korka do oleju, price=17.19]]
+oINFO  pl.zajavka.business.CarService - ###PART: [Part[serialNumber=54340-777, description=Olej, price=270.18]]
+yINFO  pl.zajavka.business.CarService - ###PART: [Part[serialNumber=68180-556, description=Korek do oleju, price=140.15]]
+yINFO  pl.zajavka.business.CarService - ###PART: [Part[serialNumber=0268-1264, description=Filtr powietrza, price=90.19]]
+ PINFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ NINFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
