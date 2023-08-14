@@ -1,9 +1,12 @@
 package pl.zajavka.business.dao;
 
-import pl.zajavka.infrastructure.database.entity.CarServiceRequestEntity;
+import pl.zajavka.domain.CarServiceRequest;
 
+import java.util.List;
 import java.util.Set;
 
 public interface CarServiceRequestDAO {
-    Set<CarServiceRequestEntity> findActiveServiceRequestsByCarVin(String carVin);
+    List<CarServiceRequest> findAvailable();
+
+    Set<CarServiceRequest> findActiveServiceRequestsByCarVin(String carVin);
 }

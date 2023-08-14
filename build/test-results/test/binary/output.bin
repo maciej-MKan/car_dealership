@@ -147,7 +147,7 @@
 ôHibernate: select s1_0.car_service_request_id,s1_0.service_part_id,s1_0.part_id,s1_0.quantity from service_part s1_0 where s1_0.car_service_request_id=?
 rHibernate: select p1_0.part_id,p1_0.description,p1_0.price,p1_0.serial_number from part p1_0 where p1_0.part_id=?
 SINFO  pl.zajavka.business.CarService - ###CAR HISTORY FOR VIN: [2C3CDYAG2DH731952]
-ˆINFO  pl.zajavka.business.CarService - ###SERVICE REQUEST: [ServiceRequest{serviceRequestNumber='2027.0.10-10.2.10.97', receivedDateTime=2027-01-10T11:02:10+01:00, completedDateTime=2029-03-02T11:09:12+01:00, customerComment='Ko≈Ço mi odpad≈Ço}]
+ÖINFO  pl.zajavka.business.CarService - ###SERVICE REQUEST: [ServiceRequest{serviceRequestNumber='2023.3.16-22.29.26.48', receivedDateTime=2023-04-16T22:29:26.778349+02:00, completedDateTime=2023-04-16T22:29:27.001454+02:00, customerComment='Ko≈Ço mi odpad≈Ço}]
 }INFO  pl.zajavka.business.CarService - ###SERVICE: [Service[serviceCode=58394-014, description=Wymiana ko≈Ça, price=240.20]]
 ~INFO  pl.zajavka.business.CarService - ###SERVICE: [Service[serviceCode=55319-866, description=Strojenie ko≈Ça, price=50.20]]
 qINFO  pl.zajavka.business.CarService - ###PART: [Part[serialNumber=11523-7310, description=Ko≈Ço, price=320.11]]
@@ -162,10 +162,10 @@
 rHibernate: select p1_0.part_id,p1_0.description,p1_0.price,p1_0.serial_number from part p1_0 where p1_0.part_id=?
 rHibernate: select p1_0.part_id,p1_0.description,p1_0.price,p1_0.serial_number from part p1_0 where p1_0.part_id=?
 SINFO  pl.zajavka.business.CarService - ###CAR HISTORY FOR VIN: [1GCEC19X27Z109567]
-˝INFO  pl.zajavka.business.CarService - ###SERVICE REQUEST: [ServiceRequest{serviceRequestNumber='2027.0.10-10.2.10.74', receivedDateTime=2027-01-10T11:02:10+01:00, completedDateTime=2029-03-02T11:09:12+01:00, customerComment='Olej mi cieknie na stopy}]
-ÖINFO  pl.zajavka.business.CarService - ###SERVICE: [Service[serviceCode=14222-2022, description=Wymiana filtra paliwa, price=14.98]]
+åINFO  pl.zajavka.business.CarService - ###SERVICE REQUEST: [ServiceRequest{serviceRequestNumber='2023.3.16-22.29.26.69', receivedDateTime=2023-04-16T22:29:26.844129+02:00, completedDateTime=2023-04-16T22:29:27.090450+02:00, customerComment='Olej mi cieknie na stopy}]
 }INFO  pl.zajavka.business.CarService - ###SERVICE: [Service[serviceCode=0008-0407, description=Wymiana oleju, price=140.15]]
 ÖINFO  pl.zajavka.business.CarService - ###SERVICE: [Service[serviceCode=43063-180, description=Wymiana korka do oleju, price=17.19]]
+ÖINFO  pl.zajavka.business.CarService - ###SERVICE: [Service[serviceCode=14222-2022, description=Wymiana filtra paliwa, price=14.98]]
 oINFO  pl.zajavka.business.CarService - ###PART: [Part[serialNumber=54340-777, description=Olej, price=270.18]]
 yINFO  pl.zajavka.business.CarService - ###PART: [Part[serialNumber=68180-556, description=Korek do oleju, price=140.15]]
 yINFO  pl.zajavka.business.CarService - ###PART: [Part[serialNumber=0268-1264, description=Filtr powietrza, price=90.19]]
